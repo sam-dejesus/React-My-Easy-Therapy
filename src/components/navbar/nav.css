@@ -1,0 +1,9 @@
+#nav-link{
+    text-decoration: none;
+    margin: 20px;
+    font-size: 20px;
+    color: rgb(166, 166, 166);
+}
+#nav-link:hover{
+    color: aliceblue;
+}
