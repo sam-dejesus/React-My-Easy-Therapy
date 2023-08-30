@@ -1,0 +1,25 @@
+.homeDivOne{
+height: 85vh;
+width: 100%;
+background-color: #fffff7;
+}
+.hdo-1{
+width: 50%;
+}
+.hdo-title{
+    font-family: var(--family);
+    font-style: var(--style);
+    font-size: 70px;
+}
+.hdo-2{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+.kids{
+    margin-top: 40px;
+    height: 65%;
+    width: 90%;
+    padding: 30px;
+    border-radius: 60px !important;
+}

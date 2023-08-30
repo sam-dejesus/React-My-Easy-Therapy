@@ -15,7 +15,7 @@ export default function Navbar({ currentPage, handlePageChange }) {
 
 
     return (
-        <section className=" mb-5 sticky-top">
+        <section className=" sticky-top">
     <nav className='nav nav-tabs bg-dark sticky-top'>
 
       <div className='col-12 navDiv d-md-none'>

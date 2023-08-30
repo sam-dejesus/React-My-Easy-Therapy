@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Sofia&display=swap');
+:root{
+  --test: 2px solid red;
+  --family:"Sofia", sans-serif;
+  --style:italic;
+}
+
 body{
   /* background-image: url('./images/puzzle-pieces-pattern/preview.jpg'); */
   background-color: aliceblue;
