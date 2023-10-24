@@ -8,8 +8,8 @@ export default function Hero() {
 
         <img src={logo} alt=""  className="img-hero" />
         <video className="video-hero"  src={video} autoPlay muted loop></video> 
-        <button className='btnOne btn btn-outline-info btn-lg'>Book Now</button>
-        <button className='btnTwo btn btn-outline-info btn-lg'>Services</button>
+        <button className='btnOne btn btn-outline-info btn-lg'>Book now</button>
+        <button className='btnTwo btn btn-outline-info btn-lg'>Learn more</button>
 
       </div>
     );

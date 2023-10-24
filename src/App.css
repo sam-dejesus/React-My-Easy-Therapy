@@ -7,5 +7,9 @@
 
 body{
   /* background-image: url('./images/puzzle-pieces-pattern/preview.jpg'); */
-  background-color: aliceblue;
+  /* background-image: linear-gradient( 109.6deg, rgba(   110,123,251,1) 11.2%, rgba(156,252,248,1) 91.1% ); */
+  /* background-image: linear-gradient( 109.6deg, rgba( 156,252,248,1) 11.2%, rgba( 110,123,251,1  )91.1% ); */
+  /* background-image: linear-gradient(to right, #d3cce3, #e9e4f0); */
+ 
+
 }

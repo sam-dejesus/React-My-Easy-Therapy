@@ -3,7 +3,9 @@
     margin: 20px;
     font-size: 20px;
     color: rgb(166, 166, 166);
+    padding-bottom: 4px;
 }
 #nav-link:hover{
     color: aliceblue;
+    border-bottom: 1px solid aliceblue;
 }

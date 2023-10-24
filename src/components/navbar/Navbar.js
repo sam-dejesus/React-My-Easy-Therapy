@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNavicon } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import {FaFacebook} from 'react-icons/fa'
+import {FaInstagram} from 'react-icons/fa'
+import {FaXTwitter} from 'react-icons/fa6'
+import {BiSolidMessageDetail} from 'react-icons/bi'
+
 import './nav.css'
 
 
@@ -30,34 +34,34 @@ export default function Navbar({ currentPage, handlePageChange }) {
 
 
       <div className={`col-12 navDiv ${showMenu ? 'd-flex flex-column ' : 'd-none'} d-md-flex justify-content-end pe-5`}>
-        <Link
-          to="/My-React-Portfolio"
-  
-          id='nav-link'
-        >
-          Home
-        </Link>
-        <Link
-          to="/projects"
+
+         <a href="https://www.facebook.com" id="nav-link">
+          <FaFacebook ></FaFacebook>
+         </a>
+          
+
+
+        <a href="https://www.facebook.com"
+       
           
           id='nav-link'
         >
-          Projects
-        </Link>
-        <Link
-          to="/resume"
+          <FaInstagram></FaInstagram>
+        </a>
+        <a href="https://www.facebook.com"
+          to="/"
       
           id='nav-link'
         >
-          Resume
-        </Link>
-        <Link
-          to="/contact"
+          <FaXTwitter></FaXTwitter>
+        </a>
+        <a href="https://www.facebook.com"
+          to="/"
 
           id='nav-link'
         >
-          Contact
-        </Link>
+          <BiSolidMessageDetail></BiSolidMessageDetail>
+        </a>
       </div>
     </nav>
       </section>
