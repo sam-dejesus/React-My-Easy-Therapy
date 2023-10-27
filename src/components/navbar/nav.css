@@ -1,4 +1,5 @@
 #nav-link{
+    font-size: 35px !important;
     text-decoration: none;
     margin: 20px;
     font-size: 20px;
@@ -8,4 +9,14 @@
 #nav-link:hover{
     color: aliceblue;
     border-bottom: 1px solid aliceblue;
+}
+.test{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 25px;
+}
+.navLogo{
+    width: 75px;
+    height: 50px;
+    margin-right: 10px;
 }
