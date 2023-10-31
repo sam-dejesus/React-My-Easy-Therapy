@@ -57,9 +57,9 @@ export default function Home() {
       <Navbar />
       <main className="d-flex flex-column mb-5">
         <div className="homeDivOne " id="home">
-          <div className="hdo-1 ">
+          <div className="hdo-1 shadow">
             <h1 className="ms-5 mt-5 hd-title">Our vision</h1>
-            <p class=" m-5">
+            <p className=" m-5">
               "At My Easy Therapy, our vision is to be the premier provider of
               ABA services, recognized for our expertise, innovation, and
               commitment to improving the lives of individuals with autism and
@@ -80,7 +80,7 @@ export default function Home() {
           </div>
         </div>
         <div className="homeDivtwo">
-          <div className=" ">
+          <div className="serviceDiv shadow ">
             <h1 className="ms-5 mt-5 hd-title d-flex justify-content-center">
               Our services
             </h1>
@@ -100,10 +100,10 @@ export default function Home() {
         </div>
         <div className="services">
           {services.map((service, index) => (
-            <div className="service-item" key={index}>
+            <div className="service-item shadow-lg" key={index}>
               <img
                 src={service.image}
-                className=" service-img"
+                className=" service-img shadow"
                 alt={service.alt}
               ></img>
               <div className="service-text d-flex align-items-center justify-content-center flex-column">
@@ -115,9 +115,9 @@ export default function Home() {
         </div>
 
         <div className="homeDivOne " id="home">
-          <div className="hdo-1 ">
+          <div className="hdo-1 shadow">
             <h1 className="ms-5 mt-5 hd-title">Our Location</h1>
-            <p class=" m-5">
+            <p className=" m-5">
               "At My Easy Therapy, we are committed to providing high-quality
               ABA therapy services to help individuals reach their full
               potential. We understand that reaching out for help can be a
@@ -134,44 +134,41 @@ export default function Home() {
             <img src={kids} alt="img1" className="kids" />
           </div>
         </div>
-        <div className="d-flex flex-row col-12">
+        <div className="d-flex flex-row col-12 contactDiv shadow">
           <form
-          id="contact"
+            id="contact"
             action="https://formsubmit.co/samuel1de2jesus3@gmail.com"
             method="POST"
             className="d-flex justify-content-center align-items-center flex-column col-6 "
           >
             <div className="d-flex flex-row first-row-contact">
-              <div className="" >
-
-              <label for="name" className="form-label font">
-              Name
-            </label>
-            <input
-              type="text"
-              className="form-control first-row-contact-input"
-              id="name"
-              name="name"
-              placeholder=""
-              required
-            ></input>
+              <div className="">
+                <label for="name" className="form-label font">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  className="form-control first-row-contact-input"
+                  id="name"
+                  name="name"
+                  placeholder=""
+                  required
+                ></input>
               </div>
 
               <div className="">
-              <label for="phone" className=" form-label font">
-              Phone
-            </label>
-            <input
-              type="text"
-              className="form-control first-row-contact-input"
-              id="phone"
-              name="phone"
-              placeholder=""
-              required
-            ></input>
+                <label for="phone" className=" form-label font">
+                  Phone
+                </label>
+                <input
+                  type="text"
+                  className="form-control first-row-contact-input"
+                  id="phone"
+                  name="phone"
+                  placeholder=""
+                  required
+                ></input>
               </div>
-
-
             </div>
 
             <label for="email" className="form-label font">
@@ -211,6 +208,85 @@ export default function Home() {
               answer any questions you may have and provide the best ABA therapy
               services.
             </p>
+          </div>
+        </div>
+
+        <div id="gallery">
+          <h1 className="hd-title service-title mt-5 mb-5">Gallery</h1>
+          <div
+            id="carouselExampleCaptions"
+            className="carousel slide carousel-container container-fluid "
+            data-bs-ride="carousel"
+          >
+            <div className="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                className="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div className="carousel-inner ">
+              <div className="carousel-item active ">
+                <img src={kids} className="d-block w-100" alt="..."></img>
+                {/* <div className="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div> */}
+              </div>
+              <div className="carousel-item">
+                <img src={kids} className="d-block w-100" alt="..."></img>
+                {/* <div className="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div> */}
+              </div>
+              <div className="carousel-item">
+                <img src={kids} className="d-block w-100" alt="..."></img>
+                {/* <div className="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div> */}
+              </div>
+            </div>
+            <button
+              className="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                className="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                className="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span className="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
       </main>
