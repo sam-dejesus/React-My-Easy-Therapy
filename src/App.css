@@ -3,6 +3,13 @@
   --test: 2px solid red;
   --family:"Sofia", sans-serif;
   --style:italic;
+  --glass{
+    background-color:  rgba( 255,255,255, 0.3); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255,255,255, 0.1); 
+  }
 }
 
 body{
@@ -11,6 +18,7 @@ body{
   /* background-image: linear-gradient( 109.6deg, rgba( 156,252,248,1) 11.2%, rgba( 110,123,251,1  )91.1% ); */
   /* background-image: linear-gradient(to right, #d3cce3, #e9e4f0); */
   /* background-image: url('./images/web images/puzzle-pieces-pattern/preview.jpg'); */
+  /* background-image: linear-gradient(to top right,#fac90624,#ff660014 50%,#cc330025); */
 
  
 

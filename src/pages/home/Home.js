@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../../components/hero/Hero";
 import Navbar from "../../components/navbar/Navbar";
+import Footer from '../../components/footer/Footer'
 import "./home.css";
 import test_img from "../../images/My-easy-therapy-center-llc.jpg";
 import kids from "../../images/kids.jpg";
@@ -80,7 +81,7 @@ export default function Home() {
           </div>
         </div>
         <div className="homeDivtwo">
-          <div className="serviceDiv shadow ">
+          <div className="container shadow serviceDiv">
             <h1 className="ms-5 mt-5 hd-title d-flex justify-content-center">
               Our services
             </h1>
@@ -134,7 +135,7 @@ export default function Home() {
             <img src={kids} alt="img1" className="kids" />
           </div>
         </div>
-        <div className="d-flex flex-row col-12 contactDiv shadow">
+        <div className="d-flex flex-row container contactDiv shadow">
           <form
             id="contact"
             action="https://formsubmit.co/samuel1de2jesus3@gmail.com"
@@ -211,8 +212,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="gallery">
-          <h1 className="hd-title service-title mt-5 mb-5">Gallery</h1>
+        <div id="gallery" className="container-full galleryDiv shadow mt-5 pb-4">
+          <h1 className="hd-title service-title  mb-5">Gallery</h1>
           <div
             id="carouselExampleCaptions"
             className="carousel slide carousel-container container-fluid "
@@ -290,6 +291,8 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
+   
   );
 }
