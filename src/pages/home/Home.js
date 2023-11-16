@@ -10,42 +10,42 @@ const services = [
   {
     name: "Speech",
     description:
-      "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      " Speech therapy helps people improve their ability to communicate effectively, by treating speech and language disorders such as stuttering, articulation problems, and voice disorders. It can improve pronunciation, grammar, vocabulary, communication skills, social communication, coping strategies, confidence, and self-esteem.",
     link: "",
     image: kids,
   },
   {
     name: "Occupational",
     description:
-      "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      " Occupational therapy helps people develop, recover, or maintain skills for daily living and working, and is used to treat physical, cognitive, or mental health challenges. It includes exercises, cognitive therapy, and environmental modifications to improve fine motor skills, memory, problem-solving, and support independence. Its goal is to help individuals live life to the fullest.",
     link: "",
     image: kids,
   },
   {
     name: "Physical",
     description:
-      "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Physical therapy helps people recover from physical injuries or impairments, as well as prevent future injuries. It uses exercises, stretches, manual therapy, and assistive devices to improve mobility, strength, balance, and flexibility. It is often used in rehabilitation to help individuals regain function and independence.",
     link: "",
     image: kids,
   },
   {
     name: "Sensory Intergration",
     description:
-      "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Sensory Integration therapy enhances sensory processing for individuals on the autism spectrum. Through targeted exercises, it refines responses to stimuli, improving attention and promoting ease in navigating the environment. This empowers individuals with increased confidence and comfort in their surroundings",
     link: "",
     image: kids,
   },
   {
     name: "Social skills",
     description:
-      "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Social Skills therapy focuses on refining interpersonal communication and relationship-building for individuals on the autism spectrum. Through structured sessions, participants practice essential social skills, gaining confidence in navigating social interactions and fostering meaningful connections.",
     link: "",
     image: kids,
   },
   {
     name: "Early Intervention",
     description:
-      "orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "Early Intervention provides timely support for young learners on the autism spectrum. Emphasizing play-based therapies and skill-building activities, it lays a strong developmental foundation. This program, working closely with families, ensures each child receives the guidance needed for positive outcomes, fostering independence from an early age.",
     link: "",
     image: kids,
   },
@@ -53,12 +53,12 @@ const services = [
 
 export default function Home() {
   return (
-    <div className="">
+    <div className=" bet">
       <Hero />
       <Navbar />
       <main className="d-flex flex-column mb-5">
         <div className="homeDivOne " id="home">
-          <div className="hdo-1 shadow">
+          <div className="hdo-1 shadow bg-white">
             <h1 className="ms-5 mt-5 hd-title">Our vision</h1>
             <p className=" m-5">
               "At My Easy Therapy, our vision is to be the premier provider of
@@ -80,8 +80,9 @@ export default function Home() {
             <img src={kids} alt="img1" className="kids" />
           </div>
         </div>
+        <hr />
         <div className="homeDivtwo">
-          <div className="container shadow serviceDiv">
+          <div className="container shadow serviceDiv bg-white">
             <h1 className="ms-5 mt-5 hd-title d-flex justify-content-center">
               Our services
             </h1>
@@ -108,15 +109,15 @@ export default function Home() {
                 alt={service.alt}
               ></img>
               <div className="service-text d-flex align-items-center justify-content-center flex-column">
-                <h4 className="service-title">{service.name}</h4>
+                <h4 className="service-title ms-2">{service.name}</h4>
                 <p className="service-description">{service.description}</p>
               </div>
             </div>
           ))}
         </div>
-
-        <div className="homeDivOne " id="home">
-          <div className="hdo-1 shadow">
+        <hr />
+        <div className="homeDivOne " >
+          <div className="hdo-1 shadow bg-white">
             <h1 className="ms-5 mt-5 hd-title">Our Location</h1>
             <p className=" m-5">
               "At My Easy Therapy, we are committed to providing high-quality
@@ -131,18 +132,18 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="hdo-2">
+          <div className="hdo-2"  id="contact">
             <img src={kids} alt="img1" className="kids" />
           </div>
         </div>
-        <div className="d-flex flex-row container contactDiv shadow">
+        <div className="d-flex flex-row container contactDiv shadow bg-white mb-5" >
           <form
-            id="contact"
+            
             action="https://formsubmit.co/samuel1de2jesus3@gmail.com"
             method="POST"
             className="d-flex justify-content-center align-items-center flex-column col-6 "
           >
-            <div className="d-flex flex-row first-row-contact">
+            <div className="d-flex flex-row first-row-contact ">
               <div className="">
                 <label for="name" className="form-label font">
                   Name
@@ -211,8 +212,8 @@ export default function Home() {
             </p>
           </div>
         </div>
-
-        <div id="gallery" className="container-full galleryDiv shadow mt-5 pb-4">
+        <hr />
+        <div id="gallery" className="container-full galleryDiv bg-white shadow mt-5 pb-4">
           <h1 className="hd-title service-title  mb-5">Gallery</h1>
           <div
             id="carouselExampleCaptions"

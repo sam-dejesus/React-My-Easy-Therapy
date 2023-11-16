@@ -1,3 +1,16 @@
+.bet{
+    width: 100% !important;
+}
+hr{
+    border-width: 2px !important;
+    margin-top: 10px;
+}
+h1{
+    color: rgb(79, 79, 79) !important;
+}
+p{
+    color: rgb(79, 79, 79);
+}
 .homeDivOne{
 height: 75vh;
 width: 100%;
@@ -47,6 +60,8 @@ p{
   font-weight: 400;
   font-size: 20px;
 }
+
+/* Service section of the webpage */
 .serviceDiv{
     background-color:  rgba( 255,255,255, 0.3); 
     backdrop-filter: blur(10px);
@@ -67,7 +82,7 @@ p{
     display: flex;
     flex-direction: column;
     height: 300px;
-    width: 350px;
+    width: 400px;
     border: 1px solid black;
     margin-bottom: 20px;
 
@@ -80,8 +95,8 @@ height: 20%;
 width: 100%;
 z-index: 1;
 border: 1px solid black;
-background-color: rgba(47, 47, 47, 0.5);
-color: rgb(213, 222, 230);
+background-color: rgba(47, 47, 47, 0.8);
+color: rgb(213, 222, 230) ;
 transition: all 0.3s; 
 overflow: hidden;
 top: 80%;
@@ -90,24 +105,26 @@ top: 80%;
 .service-title{
     display: flex;
     width: 100%;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
 }
 .service-description{
     display: none;
-    font-size: 12px;
+    font-size: 16px;
+
 
 }
 
 .service-item:hover .service-text {
-
+    justify-content: start;
     align-items: start !important;
+  
     top: 0; 
     height: 100%;
   }
   .service-item:hover .service-description{
     display: contents;
-
+    color: rgb(213, 222, 230) !important;
 
   }
 .service-img{
@@ -115,7 +132,7 @@ width: 100%;
 height: 100%;
 z-index: 0;
 }
-
+/* Contact section of the webpage */
 .contactDiv{
     padding: 13px;
     background-color:  rgba( 255,255,255, 0.3); 
@@ -147,6 +164,8 @@ width: 90% !important;
 .first-row-contact-input{
     width: 300px !important;
 }
+
+/* Gallery section of the webpage */
 .galleryDiv{
     background-color:  rgba( 255,255,255, 0.3); 
     backdrop-filter: blur(10px);
