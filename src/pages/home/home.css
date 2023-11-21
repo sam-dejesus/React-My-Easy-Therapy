@@ -12,42 +12,28 @@ p{
     color: rgb(79, 79, 79);
 }
 .homeDivOne{
-height: 75vh;
-width: 100%;
+/* height: 75vh; */
+/* width: 100%; */
 display: flex;
 flex-direction: row;
 
 
 }
 .homeDivtwo{
-height: 45vh;
+/* height: 45vh; */
 width: 100%;
 display: flex;
 flex-direction: row;
 margin-bottom: 100px;
 }
-.hdo-1{
- margin-left: 30px;
- margin-top: 30px;
- height: 85%;
- width: 50%;
- background-color:  rgba( 255,255,255, 0.3); 
- backdrop-filter: blur(10px);
- -webkit-backdrop-filter: blur(10px);
- border-radius: 10px;
- border: 1px solid rgba( 255,255,255, 0.1); 
-}
+
 
 .hd-title{
     font-family: var(--family);
     font-style: var(--style);
     font-size: 70px;
 }
-.hdo-2{
-    width: 50%;
-    display: flex;
-    justify-content: end;
-}
+
 .kids{
     margin-top: 90px;
     height: 65%;
@@ -143,9 +129,6 @@ z-index: 0;
 }
 .form-control{
 margin-bottom: 10px;
-width: 90% !important;
-
-
 }
 .contact-title{
     display: flex;
@@ -159,10 +142,10 @@ width: 90% !important;
     display: flex;
     justify-content: space-around;
     width: 100%;
-    margin-left: 30px;
+
 }
 .first-row-contact-input{
-    width: 300px !important;
+    /* width: 300px !important; */
 }
 
 /* Gallery section of the webpage */
@@ -180,7 +163,9 @@ width: 90% !important;
 
 }
 .mapcontainer{
-    width: 100%;
+    
+    width: 70%;
     height: 50vh;
-    border: var(--test);
+    border:1px solid rgba( 255,255,255, 0.1);
+    
 }

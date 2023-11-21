@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from '../../images/Logo/My Easy Therapy Center_Logo.png'
+import logo from '../../images/Logo/My Easy Therapy Center_Logo_clean.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faNavicon } from "@fortawesome/free-solid-svg-icons";
 import { FaFacebook } from "react-icons/fa";
@@ -31,7 +31,7 @@ export default function Navbar({ currentPage, handlePageChange }) {
           } d-md-flex justify-content-between pe-5`}
         >
          
-         <div>
+         <div className="ms-3 mt-2">
           <a href="#home" className="test"><img src={logo} alt="logo" className="navLogo"></img> My Easy Therapy</a>
          </div>
          <div>

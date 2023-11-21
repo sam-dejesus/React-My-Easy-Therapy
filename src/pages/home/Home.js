@@ -58,10 +58,12 @@ export default function Home() {
       <Hero />
       <Navbar />
       <main className="d-flex flex-column mb-5">
-        <div className="homeDivOne " id="home">
-          <div className="hdo-1 shadow bg-white">
-            <h1 className="ms-5 mt-5 hd-title">Our vision</h1>
-            <p className=" m-5">
+
+        <div className="homeDivOne col-12 mt-4 mb-2" id="home">
+
+          <div className="ms-3 shadow bg-white col-6">
+            <h1 className="ms-5 hd-title">Our vision</h1>
+            <p className=" p-3">
               "At My Easy Therapy, our vision is to be the premier provider of
               ABA services, recognized for our expertise, innovation, and
               commitment to improving the lives of individuals with autism and
@@ -77,11 +79,13 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="hdo-2">
+          <div className=" col-6">
             <img src={kids} alt="img1" className="kids" />
           </div>
         </div>
+
         <hr />
+
         <div className="homeDivtwo">
           <div className="container shadow serviceDiv bg-white">
             <h1 className="ms-5 mt-5 hd-title d-flex justify-content-center">
@@ -117,10 +121,11 @@ export default function Home() {
           ))}
         </div>
         <hr />
-        <div className="homeDivOne " >
-          <div className="hdo-1 shadow bg-white">
-            <h1 className="ms-5 mt-5 hd-title">Our Location</h1>
-            <p className=" m-5">
+
+        <div className="homeDivOne col-12" >
+          <div className=" shadow bg-white col-7 ms-3">
+            <h1 className="ms-5 mt-3 hd-title">Our Location</h1>
+            <p className="p-5">
               "At My Easy Therapy, we are committed to providing high-quality
               ABA therapy services to help individuals reach their full
               potential. We understand that reaching out for help can be a
@@ -128,13 +133,16 @@ export default function Home() {
               knowledgeable, experienced, and compassionate. We encourage you to
               get in touch with us today to schedule a consultation or to learn
               more about our services. You can reach us by phone, fax, email, or
-              by visiting our location ----. We'd love to hear from you and
+              by visiting our location at 6973 University Blvd, Winter Park, FL 32792. We'd love to hear from you and
               discuss how we can help."
             </p>
           </div>
 
-          <div className="hdo-2"  id="contact">
-            <img src={kids} alt="img1" className="kids" />
+          <div className="d-flex justify-content-center col-5"  id="contact">
+            
+            <div className="mapcontainer mt-5 shadow">
+              <Map /> 
+            </div>
             
           </div>
           
@@ -142,7 +150,7 @@ export default function Home() {
 
       
 
-        <div className="d-flex flex-row container contactDiv shadow bg-white mb-5" >
+        <div className="d-flex flex-row container contactDiv shadow bg-white mb-5 mt-5" >
           <form
             
             action="https://formsubmit.co/samuel1de2jesus3@gmail.com"
@@ -298,9 +306,9 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <div className="mapcontainer">
+      {/* <div className="mapcontainer">
       <Map /> 
-      </div>
+      </div> */}
 
       <Footer />
     </div>
