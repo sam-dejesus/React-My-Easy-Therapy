@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../../components/hero/Hero";
 import Navbar from "../../components/navbar/Navbar";
+import Map from "../../components/map/Map"
 import Footer from '../../components/footer/Footer'
 import "./home.css";
 import test_img from "../../images/My-easy-therapy-center-llc.jpg";
@@ -134,8 +135,13 @@ export default function Home() {
 
           <div className="hdo-2"  id="contact">
             <img src={kids} alt="img1" className="kids" />
+            
           </div>
+          
         </div>
+
+      
+
         <div className="d-flex flex-row container contactDiv shadow bg-white mb-5" >
           <form
             
@@ -292,6 +298,10 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <div className="mapcontainer">
+      <Map /> 
+      </div>
+
       <Footer />
     </div>
    
