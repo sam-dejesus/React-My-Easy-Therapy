@@ -13,4 +13,35 @@
     height: 200px;
     opacity: .6;
 }
+.webLinks{
+    color: var(--textColor);
+    text-decoration: none;
+
+}
+.webLinks:hover{
+    color: aliceblue;
+    border-bottom: 1px solid aliceblue;
+}
+.social-icons{
+    display: flex;
+    justify-content: space-around;
+
+}
+.icons{
+    color: var(--textColor);
+}
+.icons:hover{
+    color: aliceblue;
+    border-bottom: 1px solid aliceblue;
+}
+.creditDiv{
+    font-size: 12px !important;
+}
+.creditText{
+    font-size: 14px;
+}
+.creditLink{
+  color: bisque;
+  text-decoration: none;
+}
 

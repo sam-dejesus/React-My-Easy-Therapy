@@ -11,6 +11,7 @@ import "./nav.css";
 
 export default function Navbar({ currentPage, handlePageChange }) {
   const [showMenu, setShowMenu] = useState(false);
+  
 
   const toggleMenu = () => {
     setShowMenu((prev) => !prev);
@@ -27,12 +28,12 @@ export default function Navbar({ currentPage, handlePageChange }) {
 
         <div
           className={`col-12 navDiv ${
-            showMenu ? "d-flex flex-column " : "d-none"
+            showMenu ? "d-flex flex-column ps-5" : "d-none"
           } d-md-flex justify-content-between pe-5`}
         >
          
          <div className="ms-3 mt-2">
-          <a href="#home" className="test"><img src={logo} alt="logo" className="navLogo"></img> My Easy Therapy</a>
+          <a href="/" className="test"><img src={logo} alt="logo" className="navLogo"></img> My Easy Therapy</a>
          </div>
          <div>
           <a href="https://www.facebook.com" id="nav-link">
@@ -45,7 +46,7 @@ export default function Navbar({ currentPage, handlePageChange }) {
           <a href="https://www.facebook.com"  id="nav-link">
             <FaXTwitter></FaXTwitter>
           </a>
-          <a href="#contact"  id="nav-link">
+          <a href="#contact"  id="nav-link" >
             <BiSolidMessageDetail></BiSolidMessageDetail>
           </a>
          </div>

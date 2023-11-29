@@ -1,10 +1,12 @@
 
 import React from 'react';
 import './footer.css'
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
 import logo from "../../images/Logo/My Easy Therapy Center_Logo_clean.png"
 
 const Footer = () => {
+  
   return (
     <footer className="bg-dark text-light p-4">
       <div className="container">
@@ -17,11 +19,12 @@ const Footer = () => {
             <img src={logo} alt='' className='footerImg'/>
             <p className='mt-5 ps-5'>6973 University Blvd, Winter Park, FL 32792.</p>
           </div>
-          <div className="col-md-4 d-flex flex-column mt-5  align-items-center">
-            <a href=''> <h3> Our story</h3></a>
-            <a href=''> <h3>Services</h3></a>
+          <div className="col-md-4 d-flex flex-column mt-5  align-items-center justify-content-around ">
+            <a href='/About' className='webLinks'> <h3> Our story</h3></a>
+            <a href='' className='webLinks'> <h3>Services</h3></a>
 
           </div>
+
           <div className="col-md-4">
             <h3>Connect With Us</h3>
             <div className="social-icons">
@@ -29,7 +32,7 @@ const Footer = () => {
                 <FaFacebook />
               </a>
               <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className='icons'>
-                <FaTwitter />
+                <FaXTwitter  />
               </a>
               <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className='icons'>
                 <FaInstagram />
@@ -40,12 +43,19 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className='column col-12'>
-          <div>
-            <p>Created by <a href='https://sam-dejesus.github.io/My-React-Portfolio/'>Samuel Dejesus</a></p>
+
+        <div className=' col-12 d-flex justify-content-between'>
+          <div className=''>
+           <p> © My Easy Therapy LLC</p>
+          </div>
+
+          <div className='creditDiv'>
+            <p className='creditText'>Created by <a href='https://sam-dejesus.github.io/My-React-Portfolio/' className='creditLink'>Samuel Dejesus</a></p>
+            <p className='creditText'>images provided by <a href='https://www.freepik.com/' className='creditLink'>Freepik</a></p>
           </div>
 
         </div>
+
       </div>
     </footer>
   );

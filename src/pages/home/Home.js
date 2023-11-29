@@ -4,7 +4,7 @@ import Navbar from "../../components/navbar/Navbar";
 import Map from "../../components/map/Map"
 import Footer from '../../components/footer/Footer'
 import "./home.css";
-import test_img from "../../images/My-easy-therapy-center-llc.jpg";
+import { useNavigate } from "react-router-dom";
 import kids from "../../images/kids.jpg";
 
 const services = [
@@ -53,15 +53,20 @@ const services = [
 ];
 
 export default function Home() {
+  const navigate = useNavigate();
+
+  const about = ()=>{
+    navigate("/About")
+  }
   return (
-    <div className=" bet">
+    <div className=" ">
       <Hero />
       <Navbar />
-      <main className="d-flex flex-column mb-5">
+      <main className=" mb-5 container-fluid d-flex justify-content-center flex-column">
 
-        <div className="homeDivOne col-12 mt-4 mb-2" id="home">
+        <div className="mt-4 mb-2 row homeDivOne" id="home">
 
-          <div className="ms-3 shadow bg-white col-6">
+          <div className=" shadow bg-white col-md-6 divItem col-12 mb-5 ">
             <h1 className="ms-5 hd-title">Our vision</h1>
             <p className=" p-3">
               "At My Easy Therapy, our vision is to be the premier provider of
@@ -79,8 +84,8 @@ export default function Home() {
             </p>
           </div>
 
-          <div className=" col-6">
-            <img src={kids} alt="img1" className="kids" />
+          <div className=" col-md-6 col-12 d-flex justify-content-center align-items-center mb-5">
+            <img src={kids} alt="kids " className="kids" />
           </div>
         </div>
 
@@ -105,6 +110,7 @@ export default function Home() {
             </p>
           </div>
         </div>
+
         <div className="services">
           {services.map((service, index) => (
             <div className="service-item shadow-lg" key={index}>
@@ -122,8 +128,8 @@ export default function Home() {
         </div>
         <hr />
 
-        <div className="homeDivOne col-12" >
-          <div className=" shadow bg-white col-7 ms-3">
+        <div className=" col-12 row" >
+          <div className=" shadow bg-white col-md-7 col-12 ">
             <h1 className="ms-5 mt-3 hd-title">Our Location</h1>
             <p className="p-5">
               "At My Easy Therapy, we are committed to providing high-quality
@@ -138,7 +144,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="d-flex justify-content-center col-5"  id="contact">
+          <div className="d-flex justify-content-center col-md-5 col-12"  id="contact">
             
             <div className="mapcontainer mt-5 shadow">
               <Map /> 
@@ -150,12 +156,24 @@ export default function Home() {
 
       
 
-        <div className="d-flex flex-row container contactDiv shadow bg-white mb-5 mt-5" >
+        <div className="row contactDiv shadow bg-white mb-5 mt-5" >
+        <div className="d-flex flex-column justify-content-center align-items-end  col-md-6 col-12">
+            <div className="contact-title">
+              <h3>Contact Us Now</h3>
+            </div>
+
+            <p>
+              Fill out the form below to get in touch with us. We are here to
+              answer any questions you may have and provide the best ABA therapy
+              services.
+            </p>
+          </div>
+
           <form
             
             action="https://formsubmit.co/samuel1de2jesus3@gmail.com"
             method="POST"
-            className="d-flex justify-content-center align-items-center flex-column col-6 "
+            className="d-flex justify-content-center align-items-center flex-column col-md-6 col-12 "
           >
             <div className="d-flex flex-row first-row-contact ">
               <div className="">
@@ -214,21 +232,12 @@ export default function Home() {
             </button>
           </form>
 
-          <div className="d-flex flex-column justify-content-center align-items-end col-6">
-            <div className="contact-title">
-              <h3>Contact Us Now</h3>
-            </div>
 
-            <p>
-              Fill out the form below to get in touch with us. We are here to
-              answer any questions you may have and provide the best ABA therapy
-              services.
-            </p>
-          </div>
         </div>
         <hr />
-        <div id="gallery" className="container-full galleryDiv bg-white shadow mt-5 pb-4">
-          <h1 className="hd-title service-title  mb-5">Gallery</h1>
+
+        <div id="gallery" className="col-12 galleryDiv bg-white shadow mt-5 pb-4">
+          <h1 className="hd-title d-flex justify-content-center  mb-5">Gallery</h1>
           <div
             id="carouselExampleCaptions"
             className="carousel slide carousel-container container-fluid "

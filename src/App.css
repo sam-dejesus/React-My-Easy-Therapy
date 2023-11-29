@@ -3,6 +3,7 @@
   --test: 2px solid red;
   --family:"Sofia", sans-serif;
   --style:italic;
+  --textColor: rgb(166, 166, 166);
 
   --glass{
     background-color:  rgba( 255,255,255, 0.3); 
