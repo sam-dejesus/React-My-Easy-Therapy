@@ -33,7 +33,7 @@ export default function Navbar({ currentPage, handlePageChange }) {
         >
          
          <div className="ms-3 mt-2">
-          <a href="/" className="test"><img src={logo} alt="logo" className="navLogo"></img> My Easy Therapy</a>
+          <a href="/" className="logoLink"><img src={logo} alt="logo" className="navLogo"></img> My Easy Therapy</a>
          </div>
          <div>
           <a href="https://www.facebook.com" id="nav-link">

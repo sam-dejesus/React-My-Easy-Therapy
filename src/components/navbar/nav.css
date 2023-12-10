@@ -10,7 +10,7 @@
     color: aliceblue;
     border-bottom: 1px solid aliceblue;
 }
-.test{
+.logoLink{
     text-decoration: none;
     color: aliceblue;
     font-size: 25px;
@@ -21,3 +21,35 @@
     margin-right: 10px;
     margin-bottom: 10px;
 }
+
+@media (max-width: 400px) {
+
+    #nav-link{
+      font-size: 20px !important;
+    }
+
+    #navLogo{
+        width: 30px;
+        height: 30px;
+    }
+
+    .logoLink{
+        font-size: 15px;
+    }
+    }
+
+    @media (max-width: 300px) {
+
+        #nav-link{
+          font-size: 14px !important;
+        }
+    
+        #navLogo{
+            width: 20px;
+            height: 20px;
+        }
+    
+        .logoLink{
+            font-size: 10px;
+        }
+        }
