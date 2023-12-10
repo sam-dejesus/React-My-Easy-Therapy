@@ -1,6 +1,4 @@
-/* .bet{
-    width: 100% !important;
-} */
+
 hr{
     border-width: 2px !important;
     margin-top: 10px;
@@ -15,14 +13,11 @@ p{
 /* height: 75vh; */
 /* width: 100%; */
 
-border: var(--test);
-
-
 
 
 }
 .homeDivtwo{
-/* height: 45vh; */
+
 width: 100%;
 display: flex;
 flex-direction: row;
@@ -50,8 +45,6 @@ p{
 /* Service section of the webpage */
 .serviceDiv{
     background-color:  rgba( 255,255,255, 0.3); 
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     border-radius: 10px;
     border: 1px solid rgba( 255,255,255, 0.1); 
     padding: 20px;
@@ -69,8 +62,8 @@ p{
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 300px;
-    width: 400px;
+    height: 75%;
+    width: 100%;
     border: 1px solid black;
     margin-bottom: 20px;
 
@@ -145,9 +138,7 @@ margin-bottom: 10px;
     width: 100%;
 
 }
-.first-row-contact-input{
-    /* width: 300px !important; */
-}
+
 
 /* Gallery section of the webpage */
 .galleryDiv{
@@ -171,10 +162,7 @@ margin-bottom: 10px;
     
 }
 
-/* .divItem{
-    margin-top: 100px;
-    height: 40%;
-} */
+
 
 
 @media (max-width: 1220px) {
@@ -186,14 +174,17 @@ margin-bottom: 10px;
     justify-content: center;
     align-items: center;
 }
-    .divItem{
-      
-        
-    }
+
   }
   
   @media (max-width: 768px) {
     .services {
       grid-template-columns: repeat(1, 1fr);
+    }
+    video{
+        display: none;
+    }
+    button{
+        display: none;
     }
   }

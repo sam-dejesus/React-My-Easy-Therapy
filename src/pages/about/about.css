@@ -1,6 +1,14 @@
-.ourstoryDiv{
 
+.title{
+    font-family: var(--family);
+    font-style: var(--style);
+    color: rgb(79, 79, 79) !important;
+    font-size:4vh;
 }
+h1{
+    font-family: serif;
+}
+
 .handsImg{
     height: 50vh !important;
 }
@@ -23,4 +31,16 @@
     border-radius: 90px;
     padding: 5px;
     box-shadow: 10px 10px 8px rgb(176, 175, 175);
+}
+.profile{
+    width: 50%;
+    height: 60vh;
+}
+
+
+
+@media (max-width: 768px) {
+.text{
+    font-size: 9px;
+}
 }

@@ -32,3 +32,21 @@
 .heroDiv{
   height: 100vh;
 }
+
+@media (max-width: 768px) {
+  .img-hero{
+    z-index: 0;
+
+    position:relative;
+    height: 100px;
+  }
+  .heroDiv{
+    height: 10vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+}

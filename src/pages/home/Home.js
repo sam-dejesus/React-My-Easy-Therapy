@@ -5,50 +5,56 @@ import Map from "../../components/map/Map"
 import Footer from '../../components/footer/Footer'
 import "./home.css";
 import { useNavigate } from "react-router-dom";
-import kids from "../../images/kids.jpg";
 
+import kids from "../../images/kids.jpg";
+import p1 from "../../images/web images/creative-speech-therapy-illustration/6490281.jpg"
+import p2 from "../../images/web images/hand-drawn-flat-design-occupational-therapy-activity-collection/7105922.jpg"
+import p3 from "../../images/web images/multiethnic-children-exercising-gym-body-training-sport-activity-fitness-kids-cartoon-illustration/Multiethnic children exercising in gym.jpg"
+import p4 from "../../images/web images/home-daycare-abstract-concept-illustration-home-caregiver-service-child-care-housekeeper-help-with-kids-daycare-assistance-early-education-nanny-baby/Wavy_Edu-07_Single-02.jpg"
+import p5 from "../../images/web images//day-care-center-kindergarten-pupils-tutor-primary-education-nursery-school-high-quality-preschool-pr/19198476.jpg"
+import p6 from "../../images/web images/hand-drawn-speech-therapy-illustration/6414104.jpg"
 const services = [
   {
     name: "Speech",
     description:
       " Speech therapy helps people improve their ability to communicate effectively, by treating speech and language disorders such as stuttering, articulation problems, and voice disorders. It can improve pronunciation, grammar, vocabulary, communication skills, social communication, coping strategies, confidence, and self-esteem.",
     link: "",
-    image: kids,
+    image: p1,
   },
   {
     name: "Occupational",
     description:
       " Occupational therapy helps people develop, recover, or maintain skills for daily living and working, and is used to treat physical, cognitive, or mental health challenges. It includes exercises, cognitive therapy, and environmental modifications to improve fine motor skills, memory, problem-solving, and support independence. Its goal is to help individuals live life to the fullest.",
     link: "",
-    image: kids,
+    image: p2,
   },
   {
     name: "Physical",
     description:
       "Physical therapy helps people recover from physical injuries or impairments, as well as prevent future injuries. It uses exercises, stretches, manual therapy, and assistive devices to improve mobility, strength, balance, and flexibility. It is often used in rehabilitation to help individuals regain function and independence.",
     link: "",
-    image: kids,
+    image: p3,
   },
   {
     name: "Sensory Intergration",
     description:
       "Sensory Integration therapy enhances sensory processing for individuals on the autism spectrum. Through targeted exercises, it refines responses to stimuli, improving attention and promoting ease in navigating the environment. This empowers individuals with increased confidence and comfort in their surroundings",
     link: "",
-    image: kids,
+    image: p5,
   },
   {
     name: "Social skills",
     description:
       "Social Skills therapy focuses on refining interpersonal communication and relationship-building for individuals on the autism spectrum. Through structured sessions, participants practice essential social skills, gaining confidence in navigating social interactions and fostering meaningful connections.",
     link: "",
-    image: kids,
+    image: p6,
   },
   {
     name: "Early Intervention",
     description:
       "Early Intervention provides timely support for young learners on the autism spectrum. Emphasizing play-based therapies and skill-building activities, it lays a strong developmental foundation. This program, working closely with families, ensures each child receives the guidance needed for positive outcomes, fostering independence from an early age.",
     link: "",
-    image: kids,
+    image: p4,
   },
 ];
 
@@ -91,7 +97,7 @@ export default function Home() {
 
         <hr />
 
-        <div className="homeDivtwo">
+        <div className="homeDivtwo" id="services">
           <div className="container shadow serviceDiv bg-white">
             <h1 className="ms-5 mt-5 hd-title d-flex justify-content-center">
               Our services
@@ -111,7 +117,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="services">
+        <div className="services" >
           {services.map((service, index) => (
             <div className="service-item shadow-lg" key={index}>
               <img
@@ -127,7 +133,7 @@ export default function Home() {
           ))}
         </div>
         <hr />
-
+ 
         <div className=" col-12 row" >
           <div className=" shadow bg-white col-md-7 col-12 ">
             <h1 className="ms-5 mt-3 hd-title">Our Location</h1>
